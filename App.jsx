@@ -72,16 +72,36 @@ function CardComponent(props){
 }
 
 
-function TeamComponent(){
+function HoursComponent(){
     return(
-        <div>team</div>
+        <div>
+            <div className="title">
+                <h1>HOURS</h1>
+                <div className="titleText">
+                    From 09:00 to 17:00
+                    <br/>
+                    Between Sunday to Thursday
+                </div>    
+            </div>
+        </div>
     )
 }
 
 
 function WorkComponent(){
     return(
-        <div>work</div>
+        <div>
+           <div className="title">
+                <h1>WORK</h1>
+                <div className="titleText">
+                    This is only a small demo for the use of singe page application and
+                    how it should act.
+                    Since it's only a practical demo there is not much of a text here.
+                    This page was built using React functional component using conditional rendering
+                    to change the section when the user clicks the menu navigation.
+                </div>    
+            </div>
+        </div>
     )
 }
 
@@ -95,7 +115,7 @@ function MainComponent({section}) {
 
         return (
             <section>
-                <div className="main container"> 
+                <div className="services container"> 
                     <ServicesComponent/>
                 
                 </div>
@@ -103,11 +123,11 @@ function MainComponent({section}) {
         )
     }
 
-    else if ( section == 'team'){
+    else if ( section == 'hours'){
         return (
             <section>
-                <div className="main container"> 
-                    <TeamComponent/>
+                <div className="hours container"> 
+                    <HoursComponent/>
                 
                 </div>
             </section>
@@ -118,7 +138,7 @@ function MainComponent({section}) {
     else {
         return (
             <section>
-                <div className="main container"> 
+                <div className="work container"> 
                     <WorkComponent/>
                 
                 </div>
@@ -181,11 +201,11 @@ function App(){
                                     }}>Work</a>
                             </li>
                             <li className="nav-item">
-                                <a className={section == 'team' ?  'nav-link changeToBold' : 'nav-link' } id="Team" 
+                                <a className={section == 'hours' ?  'nav-link changeToBold' : 'nav-link' } id="Hours" 
                                     href="#" onClick={(e) =>  {
                                     // changeNavB(e);
-                                        setSection('team');
-                                    }}>The team</a>
+                                        setSection('hours');
+                                    }}>Hours</a>
                             </li>
                             </ul>
                             <div className="d-flex">
