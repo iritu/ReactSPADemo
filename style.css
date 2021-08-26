@@ -1,0 +1,54 @@
+.bg-light {
+    background-color:#ffffff!important;
+}
+
+#logoMobile{display:none;}
+
+  /**display img only on small devices < 300 & portrait **/
+  @media only screen and (max-width: 768px){
+    #logoMobile{display: block;}
+    #logoDesktop {display: none;}
+    .titleText{width:100%; margin: 0;}
+}
+
+nav ul>li>a:active{text-decoration: underline;}
+
+.main{
+  background-color: #EE7D74;
+}
+
+.changeToBold{font-weight: bold;}
+.addBorder{border: 1px solid #ffffff; padding:5%;}
+
+.title{
+  color:#ffffff;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.titleText{
+  color:#ffffff;
+  font-size: 16px;
+  text-align: center;
+  width:50%;
+  margin:0 auto;
+}
+ 
+.services{
+  padding-top:5%;
+  padding-bottom:5%;
+}
+
+.card{
+  background-color: transparent;
+  border:none;
+}
+
+.card h5 , .card-text{ color:#ffffff; text-align: center;}
+
+.imgCard{
+  width:100px;
+  height:100px;
+  margin:0 auto;
+}
