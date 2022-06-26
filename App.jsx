@@ -109,27 +109,21 @@ function WorkComponent(){
 
 
 function MainComponent({section}) {
-    console.log(" MainComponent =" + section); 
+   // console.log(" MainComponent =" + section); 
 
     if (section == 'services'){
 
         return (
-            <section>
-                <div className="services container"> 
-                    <ServicesComponent/>
-                
-                </div>
+            <section className="services container boxContainer">
+                <ServicesComponent/>
             </section>
         )
     }
 
     else if ( section == 'hours'){
         return (
-            <section>
-                <div className="hours container"> 
-                    <HoursComponent/>
-                
-                </div>
+            <section className="hours container boxContainer">
+                <HoursComponent/>
             </section>
         )
 
@@ -137,11 +131,8 @@ function MainComponent({section}) {
 
     else {
         return (
-            <section>
-                <div className="work container"> 
-                    <WorkComponent/>
-                
-                </div>
+            <section className="work container boxContainer">
+                <WorkComponent/>
             </section>
         )
 
