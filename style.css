@@ -5,17 +5,21 @@
 #logoMobile{display:none;}
 
   /**display img only on small devices < 300 & portrait **/
-  @media only screen and (max-width: 768px){
+  @media only screen and (min-width: 360px) and (max-width: 768px) {
     #logoMobile{display: block;}
     #logoDesktop {display: none;}
-    .titleText{width:100%; margin: 0;}
+    .titleText{width:90%; margin: 0; text-align: justify;}
+    .services{height:100vh;}
 }
+
 
 nav ul>li>a:active{text-decoration: underline;}
  
 
 .changeToBold{font-weight: bold;}
-.addBorder{border: 1px solid #ffffff; padding:5%;}
+.addBorder{
+  border: 1px solid #ffffff; 
+}
 
 .title{
   color:#ffffff;
@@ -36,6 +40,7 @@ nav ul>li>a:active{text-decoration: underline;}
   padding-top:5%;
   padding-bottom:5%;
   background-color: #EE7D74;
+  height:50vh;
 }
 
 .card{
@@ -43,8 +48,14 @@ nav ul>li>a:active{text-decoration: underline;}
   border:none;
 }
 
-.card h5 , .card-text{ color:#ffffff; text-align: center;}
+.card h5 , .card-text{ 
+  color:#ffffff; 
+  text-align: center;
+}
 
+.card-text{
+  padding:5%;
+}
 .imgCard{
   width:100px;
   height:100px;

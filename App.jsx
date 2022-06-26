@@ -176,7 +176,7 @@ function App(){
                             <img src="images/logo-pic.GIF" alt="logo" />
                         </a>
                         <button className="navbar-toggler" type="button" 
-                        data-bs-toggle="collapse" 
+                                data-bs-toggle="collapse" 
                                 data-bs-target="#navbarTogglerDemo02" 
                                 aria-controls="navbarTogglerDemo02" 
                                 aria-expanded="false" 
